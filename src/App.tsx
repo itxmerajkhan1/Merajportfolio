@@ -4,6 +4,7 @@ import { MarqueeSection } from './components/MarqueeSection';
 import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
 import { ProjectsSection, ProjectData } from './components/ProjectsSection';
+import { ContactSheetSection } from './components/ContactSheetSection';
 import { ContactModal } from './components/ContactModal';
 import { ProjectModal } from './components/ProjectModal';
 import { Footer } from './components/Footer';
@@ -49,6 +50,12 @@ export default function App() {
       <ProjectsSection
         onSelectProject={handleSelectProject}
         onSelectImage={handleSelectImage}
+      />
+
+      {/* 6. Contact Sheet Section (React Bits Pro ContactSheet Component) */}
+      <ContactSheetSection
+        onSelectImage={handleSelectImage}
+        onOpenContact={handleOpenContact}
       />
 
       {/* Footer */}
